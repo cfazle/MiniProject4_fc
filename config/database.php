@@ -4,7 +4,7 @@ $heroku_db_url = parse_url(env('DATABASE_URL', "postgres://forge:forge@localhost
 //$heroku_db_url = parse_url(getenv('DATABASE_URL', "postgres://forge:forge@localhost:5432/forge"));
 //$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 return [
-
+//change
     /*
     |--------------------------------------------------------------------------
     | Default Database Connection Name
