@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Question;
 use Illuminate\Support\Facades\Auth;
 
+
 class QuestionController extends Controller
 {
     public function __construct()
@@ -51,9 +52,9 @@ class QuestionController extends Controller
      */
 
 
-    public function show(Question $question) // it will find query for questions and load.
+    public function show(Question $question)
     {
-        return view('question')->with('question', $question); // show question view and load questions
+        return view('question')->with('question', $question);
     }
 
     /**
