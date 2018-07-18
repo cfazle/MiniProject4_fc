@@ -23,6 +23,9 @@ Route::get('/user/{user_id}/profile', 'ProfileController@create')->name('profile
 
 Route::get('user/{user_id}/profile/{profile_id', 'ProfileController@show')->name('profile.show');
 
+
+Route::get('/questions/{question_id}/answers/{answer_id}', 'AnswerController@show')->name('answers.show');
+
 Route::resources([
     'question' => 'QuestionController',
 ]);
