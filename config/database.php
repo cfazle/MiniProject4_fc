@@ -81,6 +81,7 @@ return [
             'driver' => 'pgsql',
             'host' => $heroku_db_url['host'],
             'database' => substr($heroku_db_url['path'], 1),
+            'email' => $data['email'],
           //  'username' => $heroku_db_url['email'],
             'password' => $heroku_db_url['pass'],
             'charset' => 'utf8',
