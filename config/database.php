@@ -77,7 +77,6 @@ return [
             'charset' => 'utf8',
             'prefix' => '',
         ],
-
         'pg-heroku' => [
             'driver' => 'pgsql',
             'host' => $heroku_db_url['host'],
@@ -88,6 +87,8 @@ return [
             'prefix' => '',
             'schema' => 'public',
         ],
+
+
 
 
     ],
