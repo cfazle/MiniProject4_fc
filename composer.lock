@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "41b0fb5f7792f66cce101d29f9d4f4ff",
+    "content-hash": "37cf1b978f1c21210c11fe4dc9653460",
     "packages": [
         {
             "name": "barryvdh/laravel-ide-helper",
@@ -4398,8 +4398,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.1.3",
-        "ext-pdo_sqlite": "*"
+        "php": "^7.1.3"
     },
     "platform-dev": []
 }
