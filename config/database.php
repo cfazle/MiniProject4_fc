@@ -1,5 +1,7 @@
 <?php
+
 $heroku_db_url = parse_url(env('DATABASE_URL', "postgres://forge:forge@localhost:5432/forge"));
+
 return [
 
     /*
@@ -88,6 +90,8 @@ return [
             'prefix' => '',
             'schema' => 'public',
         ],
+
+
 
 
     ],
