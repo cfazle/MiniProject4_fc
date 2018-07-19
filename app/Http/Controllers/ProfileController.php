@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Profile;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\User;
 
 class ProfileController extends Controller
 {
@@ -24,7 +26,11 @@ class ProfileController extends Controller
      */
     public function create()
     {
-        //
+
+        $profile = new Profile();
+        $edit = FALSE;
+        return view('profileForm', ['profile' => $profile,'edit' => $edit  ]);
+
     }
 
     /**
@@ -57,9 +63,13 @@ class ProfileController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+
+    public function edit($user, $profile)
     {
-        //
+        $user = User::find($user);
+        $profile = $user->profile;
+        $edit = TRUE;
+        return view('profileForm', ['profile' => $profile, 'edit' => $edit ]);
     }
 
     /**
