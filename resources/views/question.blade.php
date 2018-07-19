@@ -28,7 +28,7 @@
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-header"><a class="btn btn-primary float-left"
-                                                href="#">
+                                                href="{{ route('answers.create', ['question_id'=> $question->id])}}">
                             Answer Question
                         </a></div>
 
@@ -52,10 +52,10 @@
                             </div>
                         @endforelse
 
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 @endsection
