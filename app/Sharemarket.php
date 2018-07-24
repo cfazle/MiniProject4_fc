@@ -10,4 +10,11 @@ class Sharemarket extends Model
     use Sortable;
 
     public $sortable = ['id','companyname','price','created_at','updated_at'];
+
+  public function setCompanyName($companyname){
+      $this->companyname = $companyname;
+  }
+  public function getCompanyName(){
+      return $this->companyname;
+  }
 }

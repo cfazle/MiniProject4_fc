@@ -67,7 +67,7 @@
                                        href="{{ route('profile.show', ['user_id' => Auth::user()->id,'profile_id' => Auth::user()->profile->id]) }}">My
                                         Profile</a>
                                     <a class="dropdown-item"
-                                       href="{{ route('sharemarket.create') }}">Share</a>
+                                       href="{{ route('sharemarket.create') }}">Share Market</a>
 
                                 @else
                                     <a class="dropdown-item"
