@@ -17,4 +17,13 @@ class Sharemarket extends Model
   public function getCompanyName(){
       return $this->companyname;
   }
+
+  public function setPrice($price){
+      $this->price = $price;
+
+  }
+
+  public function getPrice(){
+      return $this->price;
+  }
 }
