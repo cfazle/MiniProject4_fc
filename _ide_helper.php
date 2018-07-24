@@ -1,7 +1,7 @@
 <?php
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 5.6.28 on 2018-07-19 13:07:43.
+ * Generated for Laravel 5.6.28 on 2018-07-24 17:00:44.
  *
  * This file should not be included in your code, only analyzed by your IDE!
  *
@@ -8769,6 +8769,16 @@ namespace Illuminate\Support\Facades {
         public static function hasValidSignature()
         {
             return \Illuminate\Http\Request::hasValidSignature();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function allFilled($keys)
+        {
+            return \Illuminate\Http\Request::allFilled($keys);
         }
          
     }

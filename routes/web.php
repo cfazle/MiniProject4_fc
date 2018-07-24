@@ -43,6 +43,8 @@ Route::patch('/questions/{question_id}/answer/{answer_id}', 'AnswerController@up
 Route::delete('/questions/{question_id}/answer/{answer_id}', 'AnswerController@destroy')->name('answers.destroy');
 
 Route::get('/sharemarket','SharemarketController@create')->name('sharemarket.create');
+Route::post('/sharemarket/store','SharemarketController@store')->name('sharemarket.store');
+Route::get('/sharemarket/index','SharemarketController@displayStock')->name('sharemarket.index');
 
 
 Route::resources([
