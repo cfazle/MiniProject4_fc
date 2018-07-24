@@ -42,6 +42,8 @@ Route::post('/questions/{question_id}/answers/', 'AnswerController@store')->name
 Route::patch('/questions/{question_id}/answer/{answer_id}', 'AnswerController@update')->name('answers.update');
 Route::delete('/questions/{question_id}/answer/{answer_id}', 'AnswerController@destroy')->name('answers.destroy');
 
+Route::get('/sharemarket','SharemarketController@create')->name('sharemarket.create');
+
 
 Route::resources([
     'questions' => 'QuestionController',
