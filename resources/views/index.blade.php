@@ -37,8 +37,18 @@
             </tr>
         @endforeach
         </tbody>
+
     </table>
     {!! $stocks->appends(\Request::except('page'))->render() !!}
+</div>
+<div class=" form-group row">
+    <div class="col-md-4"></div>
+    <div class="col-md-2">
+        <a class="btn btn-primary " href="{{ route('sharemarket.create') }}">
+            Add
+        </a>
+
+    </div>
 </div>
 </body>
 </html>
