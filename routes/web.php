@@ -33,7 +33,7 @@ Route::patch('/user/{user_id}/profile/{profile_id}', 'ProfileController@update')
 
 
 
-
+Route::get('/createQuestion', 'HomeController@create')->name('createQuestion');
 
 Route::get('/questions/{question_id}/answers/create', 'AnswerController@create')->name('answers.create');
 Route::get('/questions/{question_id}/answers/{answer_id}', 'AnswerController@show')->name('answers.show');

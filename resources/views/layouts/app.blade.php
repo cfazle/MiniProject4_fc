@@ -68,8 +68,9 @@
                                         Profile</a>
                                     <a class="dropdown-item"
                                        href="{{ route('sharemarket.create') }}">Share Market</a>
+
                                     <a class="dropdown-item"
-                                       href="{{ route('sharemarket.create') }}">Share Market</a>
+                                       href="{{ route('createQuestion') }}">Question</a>
 
                                 @else
                                     <a class="dropdown-item"
