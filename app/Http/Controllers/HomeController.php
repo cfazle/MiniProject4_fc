@@ -22,10 +22,14 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function create()
     {
         $user = Auth::user();
         $questions =$user->questions()->paginate(6);// six questions per page
-        return view('home')->with('questions', $questions);
+        return view('createQuestion')->with('questions', $questions);
     }
+
+   public function index(){
+       return view('home');
+   }
 }
