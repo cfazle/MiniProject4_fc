@@ -8,46 +8,46 @@ Epics:
 **`User Stories:**
   
   **Registrataion/Login:**
-  1) As a use I must register first
-  2) As a user I must make a register page on the top right menu bar
-  3) As a user I must put email, password an confirmed password to register myself
-  4) As a user after registration I must create my profile
+  1) As a use I must register first.
+  2) As a user I must make a register page on the top right menu bar.
+  3) As a user I must put email, password an confirmed password to register myself.
+  4) As a user after registration I must create my profile.
  
   **Create Profile:**
-  1) As a user I must create a drop down menu title My Account to select Create Profile
-  2) As a user I must enter First Name, Last Name and detail description in the profile page
-  3) As a user after entering required information my profile should be created
+  1) As a user I must create a drop down menu title My Account to select Create Profile.
+  2) As a user I must enter First Name, Last Name and detail description in the profile page.
+  3) As a user after entering required information my profile should be created.
   
   **My Profile**
-  1)  As a user I must be able to see my profile
-  2) As a user I must be able to edit my profile
-  3) As a user I must be able to save my profile
+  1)  As a user I must be able to see my profile.
+  2) As a user I must be able to edit my profile.
+  3) As a user I must be able to save my profile.
  
   **Create Question**
   
-  1) As a user I must be able to enter questions
-  2) As a user I must be able to save questions
-  3) As a user I must be able to view my questions
-  4) As a user I must be able to edit question
-  5) As a user I must be able to delete question
+  1) As a user I must be able to enter questions.
+  2) As a user I must be able to save questions.
+  3) As a user I must be able to view my questions.
+  4) As a user I must be able to edit questions.
+  5) As a user I must be able to delete questions.
   
   **Answer Question**
-  1) As a user I must be able to answer a question
-  2) As a user I must be able to save answer
-  3) As a user I must be able to view my answer
-  4) As a user I must be able to edit answer
-  5) As a user I must be able to delete answer
+  1) As a user I must be able to answer a question.
+  2) As a user I must be able to save answer.
+  3) As a user I must be able to view my answer.
+  4) As a user I must be able to edit my answer.
+  5) As a user I must be able to delete my answer.
  
   **Share Market**
-  1) As a user I must be able to enter Share and price
-  2) As a user I must be able to add more shares
-  3) As a user I must be able to sort shares and prices in ascending order
-  4) As a user I must be able sort shares and prices in descending order
+  1) As a user I must be able to enter Share and price.
+  2) As a user I must be able to add more shares.
+  3) As a user I must be able to sort shares and prices in ascending order.
+  4) As a user I must be able sort shares and prices in descending order.
   
   **Prerequisits:**
-  1) Enable plugin for laravel by File->setting->plugin->laravel plugging
-  2) Install the laravel IDE helper by typing ” composer require barryvdh/laravel-ide-helper”
-  3) Update Composer.json file  
+  1) Enable plugin for laravel by File->setting->plugin->laravel plugging.
+  2) Install the laravel IDE helper by typing ” composer require barryvdh/laravel-ide-helper”.
+  3) Update Composer.json file as follows:
     "post-update-cmd": [
     
                 "Illuminate\\Foundation\\ComposerScripts::postUpdate",
@@ -58,20 +58,20 @@ Epics:
     
             ]
     
-   4) Type composer update
-   5) To get database column type “composer require doctrine/dbal”
-   6)  Create a new database  “database.sqlite”
-   7) Config the .env file for database.sqlite
-   8) Run php artisan migrate refresh to update the database table
-   9) Run the helper models “php artisan ide-helper:models”
+   4) On the terminal window type composer update.
+   5) To get database column type “composer require doctrine/dbal” on the terminal window.
+   6)  Create a new database  “database.sqlite”.
+   7) Config the .env file for database.sqlite.
+   8) On the terminal run php artisan migrate refresh to update the database table.
+   9) On the terminal run the helper models “php artisan ide-helper:models”.
    10) Type “y”
    
    **Database Column sorting**
-   1) First, install the kyslik/column-sortable package via the Composer package manager.
+   1) First, install the kyslik/column-sortable package via the Composer package manager as follwos:
       
       composer require kyslik/column-sortable
       
-   2) Add ServiceProvider in config/app.php
+   2) Add ServiceProvider in config/app.php as follows:
       
       'providers' => [
                        Kyslik\ColumnSortable\ColumnSortableServiceProvider::class,
