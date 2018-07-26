@@ -5,7 +5,7 @@ Epics:
 
 `
 
-**`User Stories:**
+**User Stories:**
   
   **Registrataion/Login:**
   1) As a use I must register first.
@@ -18,12 +18,12 @@ Epics:
   2) As a user I must enter First Name, Last Name and detail description in the profile page.
   3) As a user after entering required information my profile should be created.
   
-  **My Profile**
+  **My Profile:**
   1)  As a user I must be able to see my profile.
   2) As a user I must be able to edit my profile.
   3) As a user I must be able to save my profile.
  
-  **Create Question**
+  **Create Question:**
   
   1) As a user I must be able to enter questions.
   2) As a user I must be able to save questions.
@@ -31,14 +31,14 @@ Epics:
   4) As a user I must be able to edit questions.
   5) As a user I must be able to delete questions.
   
-  **Answer Question**
+  **Answer Question:**
   1) As a user I must be able to answer a question.
   2) As a user I must be able to save answer.
   3) As a user I must be able to view my answer.
   4) As a user I must be able to edit my answer.
   5) As a user I must be able to delete my answer.
  
-  **Share Market**
+  **Share Market:**
   1) As a user I must be able to enter Share and price.
   2) As a user I must be able to add more shares.
   3) As a user I must be able to sort shares and prices in ascending order.
@@ -66,7 +66,7 @@ Epics:
    9) On the terminal run the helper models “php artisan ide-helper:models”.
    10) Type “y”
    
-   **Database Column sorting**
+   **Database Column sorting:**
    1) First, install the kyslik/column-sortable package via the Composer package manager as follwos:
       
       composer require kyslik/column-sortable
@@ -80,7 +80,7 @@ Epics:
       
       php artisan vendor:publish --provider="Kyslik\ColumnSortable\ColumnSortableServiceProvider" --tag="config"   
   
-  **User Manual**     
+  **User Manual:**     
   1) Click on Register on the top right menu bar
   2) Enter email, password  and confirm password fileds and then click on Register button and you will be logged in.
   3) Then click on My Account->Create Profile on the top right drop down menu.
